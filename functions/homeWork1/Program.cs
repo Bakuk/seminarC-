@@ -5,6 +5,6 @@ int returnSecondNumber(int n){
 }
 
 
-int a = Int32.Parse(Console.ReadLine());;
+int a = Int32.Parse(Console.ReadLine());
 int res = returnSecondNumber(a);
 Console.WriteLine(res);
