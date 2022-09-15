@@ -13,7 +13,7 @@ System.Console.WriteLine(countEven(numbers));
 void fullArray(int[] array){
     
     for(int i = 0; i<array.Length; i++){
-        numbers[i] = new Random().Next(0, 10);
+        numbers[i] = new Random().Next(100, 999);
     }
 }
 
