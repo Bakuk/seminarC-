@@ -18,16 +18,16 @@ checkValue(array, value);
 
 
 void FillArray(int[,] arr){
-    for (int i = 0; i<n; i++){
-        for(int j = 0; j<m; j++){
+    for (int i = 0; i<arr.GetLength(0); i++){
+        for(int j = 0; j<arr.GetLength(1); j++){
             array[i,j] = new Random().Next(0, 10);
         }
     }
 }
 
 void PrintArray(int[,] arr){
-    for (int i = 0; i<n; i++){
-        for(int j = 0; j<m; j++){
+    for (int i = 0; i<arr.GetLength(0); i++){
+        for(int j = 0; j<arr.GetLength(1); j++){
             System.Console.Write(" " + array[i,j]); 
         }
     System.Console.WriteLine();
@@ -36,8 +36,8 @@ void PrintArray(int[,] arr){
 
 void checkValue(int[,] arr, int val){
     bool check = true;
-    for (int i = 0; i<n; i++){
-        for(int j = 0; j<m; j++){
+    for (int i = 0; i<arr.GetLength(0); i++){
+        for(int j = 0; j<arr.GetLength(1); j++){
             if(arr[i,j] == val){
                 check = false;
                 break;
