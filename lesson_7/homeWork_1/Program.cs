@@ -1,4 +1,8 @@
-﻿int Prompt(string message){
+﻿/* Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+
+m = 3, n = 4. */
+
+int Prompt(string message){
     System.Console.WriteLine(message);
     int num = Int32.Parse(Console.ReadLine());
     return num; 
